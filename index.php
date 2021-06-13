@@ -5,13 +5,87 @@ session_start();
 <html>
 <head>
 <title>Welcome to Online Exam</title>
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="quiz.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/bb34f698aa.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+	<!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
+
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
+
+	  <div class="container-fluid">
+	    <a style="text-decoration:none" class="navbar-brand" href="www.google">Eklavya</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav justify-content-end">
+					<li class="nav-item">
+						<a style="text-decoration:none"  class="nav-link" href="/">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a style="text-decoration:none" class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a style="text-decoration:none" class="nav-link" href="#">Contact</a>
+					</li>
+</div>
+
+			 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+		  			<button class="btn btn-light me-md-2 float-end" type="button">Login</button>
+		  		  <button class="btn btn-secondary float-end" type="button">Register</button>
+				</div>
+				<!-- <div class="alert alert-info clearfix"> -->
+    <!-- <a href="#" class="alert-link">
+      Summary:Its some description.......testtesttest
+    </a>
+    <button type="button" class="btn btn-primary btn-lg float-end">
+      Large button
+    </button> -->
+<!-- </div> -->
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Aspirants-Dialogue-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/TVFs-Aspirants-SK-Dialogues-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Kota-Factory-Dialogues-12.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <?php
+
+
 include("header.php");
 include("database.php");
 extract($_POST);
@@ -41,16 +115,16 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
     <td valign="bottom"> <a href="result.php" class="style4">Result </a></td>
   </tr>
 </table>';
-   
+
 		exit;
-		
+
 
 }
 
 
 ?>
 <table width="100%" border="0">
-  
+
   <tr>
     <td height="296" valign="top"><div align="center">
         <h1 class="style8">Welcome to Online Quiz</h1>
@@ -62,8 +136,8 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
         <param name="BGCOLOR" value="#FFFFFF">
 <p align="left" class="style5">&nbsp;</p>
       <blockquote>
-          <p align="left" class="style5"><span class="style7">WelCome to Online 
-            exam. This Site will provide the quiz for various subject of interest. 
+          <p align="left" class="style5"><span class="style7">WelCome to Online
+            exam. This Site will provide the quiz for various subject of interest.
             You need to login for the take the online exam.</span></p>
       </blockquote>
     </div></td>
@@ -73,7 +147,7 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 		<center>
 		<img class="img-circle" src="1.jpg"  title="this is my profile pic" width="240px" height="190px" border="1" />
 		</center>	<br>
-	
+
 				<tr>
 					<th class="text-primary">LOGIN ID</th>
 					<th>
@@ -93,7 +167,7 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
          <th></th>
 				<th class="errors">
 					<input class="btn btn-danger "type="submit" name="submit" id="submit" Value="Login"/>
-				
+
         <a class="btn btn-success " href="signup.php">New user ? click here</a></th>
       </table>
       <div align="center">
@@ -103,5 +177,9 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
   </tr>
 </table>
 
+
+
+
 </body>
+
 </html>
