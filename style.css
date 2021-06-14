@@ -1,7 +1,6 @@
 body{
-
+  /* background-color: */
 }
-
 
 /* header section */
 
@@ -14,7 +13,7 @@ body{
   font-size: 20px;
   padding-bottom: 50px;
   /* margin-bottom: 30px; */
-  background-color: #01937c;
+  /* background-color: #01937c;/ */
   text-align: center;
 
 
@@ -22,7 +21,10 @@ body{
 
 
 
-
+.end-section {
+  background-color: red;
+  margin: 20px 10px;
+}
 
 
 
@@ -32,8 +34,13 @@ body{
 footer{
   padding-top: 100px;
   text-align: center;
+  background-color: red;
 }
 
+.footer{
+    background-color: #01937c;
+}
 .social{
+    background-color: red;
   text-align: center;
 }
