@@ -1,0 +1,39 @@
+body{
+
+}
+
+
+/* header section */
+
+.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.navbar{
+  padding-top: 10px;
+  font-size: 20px;
+  padding-bottom: 50px;
+  /* margin-bottom: 30px; */
+  background-color: #01937c;
+  text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* footer section */
+footer{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.social{
+  text-align: center;
+}
