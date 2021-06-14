@@ -6,6 +6,7 @@ body {
 }
 -->
 </style>
+
 <!--<table border="0" width="100%" cellspacing="0" cellpadding="0" background="image/click.png">
   <tr>
     <td width="90%" valign="top">
@@ -44,18 +45,6 @@ scale= showall>
   error_reporting(1);
   ?>
   </td>
-    <td>
-	<?php
-	if(isset($_SESSION['login']))
-	{
-	 echo "<div align=\"right\"><strong><a href=\"index.php\"> Home </a>|<a href=\"signout.php\">Signout</a></strong></div>";
-	 }
-	 else
-	 {
-	 	echo "&nbsp;";
-	 }
-	?>
-	</td>
 	
   </tr>
   

@@ -39,15 +39,12 @@ session_start();
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand" href="www.google">Eklavya</a>
+	    <a style="text-decoration:none" class="navbar-brand" href=""Location: index.php">Eklavya</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav justify-content-end">
-					<li class="nav-item">
-						<a style="text-decoration:none"  class="nav-link" href="/">Home</a>
-					</li>
 
 					<li class="nav-item">
 						<a style="text-decoration:none" class="nav-link" href="#">About</a>
@@ -58,8 +55,8 @@ session_start();
 </div>
 
 			 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-		  			<button class="btn btn-light me-md-2 float-end" type="button">Login</button>
-		  		  <button class="btn btn-secondary float-end" type="button">Register</button>
+					<a class="btn btn-outline-info btn-lg " href="signup.php" class="button">Register</a>
+		  		   <!--<button class="btn btn-secondary float-end" type="button" href="signup.php">Register</button> -->
 				</div>
 				<!-- <div class="alert alert-info clearfix"> -->
     <!-- <a href="#" class="alert-link">
@@ -98,8 +95,8 @@ session_start();
 <?php
 
 
-include("header.php");
 include("database.php");
+include('header.php');
 extract($_POST);
 
 if(isset($submit))
@@ -110,13 +107,16 @@ if(isset($submit))
 		$found="N";
 	}
 	else
-	{
+	{		
+		
 		$_SESSION['login']=$loginid;
 	}
 }
 if (isset($_SESSION['login']))
 {
-echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
+	//echo '<a class="button" href=\"signout.php\">Signout</a>';
+	echo "<div align=\"right\"><strong><a href=\"index.php\"> Home </a> | <a href=\"signout.php\">Sign Out</a></strong></div>";
+	echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 		echo '<table width="28%"  border="0" align="center">
   <tr>
     <td width="7%" height="65" valign="bottom"><img src="image/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
@@ -127,10 +127,7 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
     <td valign="bottom"> <a href="result.php" class="style4">Result </a></td>
   </tr>
 </table>';
-
 		exit;
-
-
 }
 
 
@@ -163,7 +160,7 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 				<tr>
 					<th class="text-primary">LOGIN ID</th>
 					<th>
-					<input class="form-control"type="TEXT" title="enter your regitered LOGIN ID"  placeholder="LOGIN ID"  maxlength="10" size="25"  id="loginid2" name="loginid"/></tD>
+					<input class="form-control"type="TEXT" title="enter your registered LOGIN ID"  placeholder="LOGIN ID"  maxlength="10" size="25"  id="loginid2" name="loginid"/></tD>
 				</th>
 				<tr>
 					<th class="text-primary">ENTER PASSWORD</th>
@@ -172,7 +169,10 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 					       <?php
 		  if(isset($found))
 		  {
-		  	echo "Invalid Username or Password";
+		  		//echo "Invalid Username or Password";				
+				echo '<script>alert("Invalid Username or Password")</script>';
+			  	session_destroy();
+				header("Location: index.php");
 		  }
 		  ?>
           </span></td>
