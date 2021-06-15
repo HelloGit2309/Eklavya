@@ -39,7 +39,7 @@ session_start();
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand" href=""Location: index.php">Eklavya</a>
+	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php">Eklavya</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -108,25 +108,29 @@ if(isset($submit))
 	}
 	else
 	{		
-		
 		$_SESSION['login']=$loginid;
 	}
 }
 if (isset($_SESSION['login']))
 {
-	//echo '<a class="button" href=\"signout.php\">Signout</a>';
-	echo "<div align=\"right\"><strong><a href=\"index.php\"> Home </a> | <a href=\"signout.php\">Sign Out</a></strong></div>";
+	//echo '<th align=\"right\"> </div><a class="btn btn-info" href=\"signout.php\">Sign Out</a></th>';
+
+	echo "<div align=\"right\"><strong><a href=\"index.php\"> Home </a> | <td>
+	<a href='update.php?uid=$_SESSION[login]'>Update Profile</a>
+	</td> | <a href=\"signout.php\">Sign Out</a> | <a
+	href='delete.php?uid=$_SESSION[login]'>Delete Account</a></strong></div>";
+
 	echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 		echo '<table width="28%"  border="0" align="center">
-  <tr>
-    <td width="7%" height="65" valign="bottom"><img src="image/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
-    <td width="93%" valign="bottom" bordercolor="#0000FF"> <a href="sublist.php" class="style4">Subject for Quiz </a></td>
-  </tr>
-  <tr>
-    <td height="58" valign="bottom"><img src="image/DEGREE.JPG" width="43" height="43" align="absmiddle"></td>
-    <td valign="bottom"> <a href="result.php" class="style4">Result </a></td>
-  </tr>
-</table>';
+  	<tr>
+		<td width="7%" height="65" valign="bottom"><img src="image/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
+		<td width="93%" valign="bottom" bordercolor="#0000FF"> <a href="sublist.php" class="style4">Subject for Quiz </a></td>
+	</tr>
+	<tr>
+		<td height="58" valign="bottom"><img src="image/DEGREE.JPG" width="43" height="43" align="absmiddle"></td>
+		<td valign="bottom"> <a href="result.php" class="style4">Result </a></td>
+	</tr>
+	</table>';
 		exit;
 }
 

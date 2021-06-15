@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `mst_admin` (
 --
 
 INSERT INTO `mst_admin` (`id`, `loginid`, `pass`) VALUES
-(1, 'sanjeev', 'sanjeev');
+(1, 'admin', 'admin');
 
 -- --------------------------------------------------------
 
