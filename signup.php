@@ -89,7 +89,7 @@ include("header.php");
  <table width="100%" border="0">
    <tr>
      <td width="132" rowspan="2" valign="top"><span class="style8"><img src="images/connected_multiple_big.jpg" width="131" height="155"></span></td>
-     <h1 class="text-center bg-primary">REGISTRACTION PAGE</h1>
+     <h1 class="text-center bg-primary">REGISTRATION PAGE</h1>
    </tr>
    <tr>
      <td><form name="form1" method="post" action="signupuser.php" onSubmit="return check();">

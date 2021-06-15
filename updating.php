@@ -14,7 +14,8 @@ echo '<font color="red">Email field is empty.</font><br>';
 } 
 }else {	
 $result = mysqli_query($con, "update mst_user set email='$email', username='$name',phone='$phone',address='$add',city='$city' where login=$id");
-header("Location: index.php");
+echo "<font color='green' >Update Successful</font> <br/>";
+echo '<strong><a href="index.php">Return Home</a></strong>';
 }
 }
 ?>
