@@ -16,12 +16,12 @@ include("header.php");
 <?php
 
 include("database.php");
-echo "<h1>Select Subject</h1>";
+echo "<h1>SELECT A SUBJECT</h1>";
 $rs=mysqli_query($con,"select * from mst_subject");
 echo "<table class='table table-light table-border-less'>";
 while($row=mysqli_fetch_row($rs))
 {
-	echo "<tr><td align=center style='text-color:white' ><a href=showtest.php?subid=$row[0]><font size=4>$row[1]</font></a>";
+	echo "<tr><td class='subjects' ><a href=showtest.php?subid=$row[0]><font size=4>$row[1]</font></a>";
 }
 echo "</table>";
 include('footer.php');

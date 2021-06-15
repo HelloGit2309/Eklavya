@@ -33,9 +33,9 @@
 
 
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
-
+<!-- Location: index.php -->
 	  <div class="container-fluid">
-	    <a style="text-decoration:none;color:#F4F6FF" class="navbar-brand" href="Location: index.php">Eklavya</a>
+	    <a style="text-decoration:none;color:#F4F6FF" class="navbar-brand" href="index.php">Eklavya</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -99,8 +99,9 @@ bgcolor=#000000
 scale= showall>
 </embed>
 </object></div></td>-->
-    /* <td width="10%">
-     <img border="0" src="image/h.jpg" width="100%" height="150" align="right"></td> */
+    <td width="10%">
+     <img border="0"  width="100%" height="150" align="right">
+		 </td>
   </tr>
 </table>
 <!--<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#000000" background="img/blackbar.jpg">

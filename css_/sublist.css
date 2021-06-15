@@ -5,10 +5,25 @@ h1{
 
 table {
     border: 1px solid #CCC;
-    border-collapse: collapse;
+
+    border-collapse: separate;
+    /* border-collapse: collapse; */
+    border-spacing: 10px;
+    padding-bottom: 40px;
 }
 
 td {
-
-    border: none;
+  padding-top: 1em;
+   padding-bottom: 2em;
+  text-align: center;
+  /* margin-bottom: 100px; */
+  /* padding: 7px; */
+  border: none;
 }
+
+/* .subjects{
+  text-align: center;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+} */
