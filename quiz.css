@@ -1,6 +1,25 @@
 body {
+	background: url(registration.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+
+	font-style: 'Roboto', sans-serif;
+}
+.myTable{
+	align: center;
+	text-align: center;
+	font-weight: bold;
+	border-collapse: collapse;
+	padding-bottom: 10px;
+	vertical-align: center;
+  border-top: 0;
+
+
 }
 .style1 {
 	color: #FFFFFF;
@@ -16,10 +35,10 @@ body {
 }
 .style5 {color: #990033}
 .style6 {color: #ECE9D8}
-.style7 {
+/* .style7 {
 	color: #993300;
 	font-weight: bold;
-}
+} */
 .style8 {
 	color: #6633CC;
 	font-weight: bold;
@@ -58,7 +77,7 @@ a:visited {
 	font-size: 18px;
 	font-weight: bold;
 	color: #000000;
-	
+
 }
 .tans {
 	font-family: Arial, Helvetica, sans-serif;
