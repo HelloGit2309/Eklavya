@@ -1,18 +1,10 @@
 
-
-
 <footer class ="footer" id="footer">
   <div class="container-fluid">
-    <i class="social fab fa-linkedin"></i>
-    <i class="social fab fa-facebook"></i>
-  <i class="social fab fa-instagram"></i>
-   <i class="social fab fa-twitter"></i>
-   <p>© Copyright 2021 EKLAVYA</p>
+    <h3 class="social fab fa-linkedin"></h3>
+    <h3 class="social fab fa-facebook"></h3>
+    <h3 class="social fab fa-instagram"></h3>
+    <h3 class="social fab fa-twitter"></h3>
+    <p>© Copyright 2021 EKLAVYA</p>
  </div>
 </footer>
-
-
-
-</body>
-
-</html>

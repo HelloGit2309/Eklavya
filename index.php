@@ -39,7 +39,7 @@ session_start();
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><b>Eklavya</b></a>
+	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><h3>Eklavya</h3></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>	
 	    </button>
@@ -55,8 +55,8 @@ session_start();
 </div>
 
 			 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-					 <a class="btn btn-outline-info btn-lg " href="admin/index.php" class="button">Admin Login</a>
-					<a class="btn btn-outline-info btn-lg " href="signup.php" class="button">Register</a>
+					 <a class="btn btn-warning btn-lg " href="admin/index.php" class="button">Admin Login</a>
+					<a class="btn btn-warning btn-lg " href="signup.php" class="button">Register</a>
 		  		   <!--<button class="btn btn-secondary float-end" type="button" href="signup.php">Register</button> -->
 				</div>
 				<!-- <div class="alert alert-info clearfix"> -->
@@ -125,7 +125,7 @@ if (isset($_SESSION['login']))
 	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";
 		echo '<table width="28%"  border="0" align="center">
   	<tr>
-		<td width="7%" height="65" valign="bottom"><img src="image/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
+		<td width="7%" height="65" valign="bottom"><img src="images/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
 		<td width="93%" valign="bottom" bordercolor="#0000FF"> <a href="sublist.php" class="style4">Subject for Quiz </a></td>
 	</tr>
 	<tr>
