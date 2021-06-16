@@ -9,6 +9,8 @@ body {
 .style2 {
 	color: #990000;
 	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
 }
 .style4 {
 	color: #000000;
@@ -23,6 +25,8 @@ body {
 .style8 {
 	color: #6633CC;
 	font-weight: bold;
+	font-size: 18px;
+	padding:5px;
 }
 a:link {
 	color: #330066;
@@ -38,7 +42,7 @@ a:visited {
 }
 .head1 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 28px;
 	color: #FF0000;
 	text-align: center;
 	font-weight: bold;
@@ -62,7 +66,7 @@ a:visited {
 }
 .tans {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	color:#00CC66 ;
 }
@@ -71,4 +75,14 @@ a:visited {
 	font-size: 18px;
 	font-weight: bold;
 	color:#FF0000 ;
+}
+.next-review{
+	padding: 5px 15px;
+	margin: 10px 0px;
+    background: rgb(195, 216, 121);
+    border: 1px black solid;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	font-size: 18px;
 }
