@@ -10,10 +10,14 @@ h1{
   text-align: center;
 	font-style: 'Roboto', sans-serif;
 }
+
+.form-control{
+	margin-bottom: 10px;
+}
 .myTable{
-	align: center;
+
 	text-align: center;
-	font-weight: bold;
+
 	border-collapse: collapse;
 	padding-bottom: 10px;
 	vertical-align: center;
@@ -23,15 +27,15 @@ h1{
 }
 .style1 {
 	color: #FFFFFF;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 .style2 {
 	color: #990000;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 .style4 {
 	color: #000000;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 .style5 {color: #990033}
 .style6 {color: #ECE9D8}
@@ -41,7 +45,7 @@ h1{
 } */
 .style8 {
 	color: #6633CC;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 a:link {
 	color: #330066;
@@ -60,7 +64,7 @@ a:visited {
 	font-size: 24px;
 	color: #FF0000;
 	text-align: center;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 .errors {
 

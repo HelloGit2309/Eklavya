@@ -99,12 +99,13 @@ include("header.php");
      <!-- <td width="132" rowspan="2" valign="top"><span class="style8"><img src="images/connected_multiple_big.jpg" width="131" height="155"></span></td> -->
      <h1 >REGISTRATION PAGE</h1>
    </tr>
+
    <tr>
-     <td><form name="form1" method="post" action="signupuser.php" onSubmit="return check();">
+     <td><form class="form" name="form1" method="post" action="signupuser.php" onSubmit="return check();">
        <center>
 		<!-- <img class="img-circle" src="2.jpg"  width="240px" height="190px" border="1" /> -->
 		</center>	<br>
-			<table align="center">
+			<table class="myTable" align="center">
 
            <tr>
            <td class="style7">LOGIN ID</div></td>
