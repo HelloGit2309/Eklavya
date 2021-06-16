@@ -25,11 +25,11 @@ if(isset($submit))
 		<a href='index.php'>Click here to login again </a>
 		<div>";
 	//exit;
-		echo "<script>window.location='index.php'</script>";		
+		echo "<script>window.location='index.php'</script>";
 	}
 	else
 	{
-	echo "<script>window.location='login.php'</script>";			
+	echo "<script>window.location='login.php'</script>";
 	$_SESSION['alogin']="true";
 	}
 }
@@ -39,17 +39,15 @@ else if(!isset($_SESSION['alogin']))
 		exit;
 }
 
-		echo"<h1 class='text-center bg-danger'>Welcome to Admistrative Area</h1>";	
+		echo"<h1 class='text-center bg-danger'>Welcome to Admistrative Area</h1>";
 
 
 
 	//echo"<div style='background:#CDDC39;padding:49PX;margin-top:33px;margin-right:20px;border-radius:500px'> ";
-			
-		
+
 
 
 ?>
-
 
 
 </body>

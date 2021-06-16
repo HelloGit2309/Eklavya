@@ -7,11 +7,16 @@ include("header.php");
 <head>
 <title>Online Quiz - Quiz List</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="css_/sublist.css">
 <link href="quiz.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <!-- <link rel="stylesheet" href="css_/styles.css"> -->
+<<<<<<< HEAD
+
+=======
 <link rel="stylesheet" href="css_/sublist.css">
 <link rel="stylesheet" href="css_/styles.css">
+>>>>>>> 493ccb73b2826a7dc745988a4f648e594a79d3b5
 </head>
 <body>
 <?php

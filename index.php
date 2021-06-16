@@ -7,9 +7,9 @@ session_start();
 <title>Welcome to Online Exam</title>
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+<!-- <link href="quiz.css" rel="stylesheet" type="text/css"> -->
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="/css_/styles.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,7 +30,7 @@ session_start();
 
 <!-- CSS styless -->
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css_/styles.css">
 </head>
 
 <body>
@@ -41,8 +41,11 @@ session_start();
 	  <div class="container-fluid">
 	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><h3>Eklavya</h3></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>	
+	      <span class="navbar-toggler-icon"></span>
 	    </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+
+
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav justify-content-end">
 
@@ -52,25 +55,24 @@ session_start();
 					<li class="nav-item">
 						<a style="text-decoration:none" class="nav-link" href="#footer"><b>Contact</b></a>
 					</li>
-</div>
 
-			 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
-					 <a class="btn btn-warning btn-lg " href="admin/index.php" class="button">Admin Login</a>
-					<a class="btn btn-warning btn-lg " href="signup.php" class="button">Register</a>
-		  		   <!--<button class="btn btn-secondary float-end" type="button" href="signup.php">Register</button> -->
-				</div>
-				<!-- <div class="alert alert-info clearfix"> -->
-    <!-- <a href="#" class="alert-link">
-      Summary:Its some description.......testtesttest
-    </a>
-    <button type="button" class="btn btn-primary btn-lg float-end">
-      Large button
-    </button> -->
-<!-- </div> -->
-	      </ul>
-	    </div>
+			 </ul>
 	  </div>
+	
+		<div class="float-right">
+			<ul class ="navbar-nav justify-content-end">
+				<li>
+				<a style="text-decoration:none;color:white" class="btn pd-2 btn-dark  me-2 mb-2 " href="admin/index.php"  >Admin Login</a>
+			</li>
+			<li>
+				<a style="text-decoration:none" class = "btn btn-light  justify-content-md-end" href="signup.php">Register</a>
+			</li>
+		</ul>
+		</div>
+
+			</div>
 	</nav>
+
 
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -108,7 +110,7 @@ if(isset($submit))
 		$found="N";
 	}
 	else
-	{		
+	{
 		$_SESSION['login']=$loginid;
 	}
 }
@@ -119,7 +121,7 @@ if (isset($_SESSION['login']))
 	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a>&nbsp<td>
 	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
 	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out
-	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]' 
+	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
 	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong></div>";
 
 	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";
@@ -131,7 +133,7 @@ if (isset($_SESSION['login']))
 	<tr>
 		<td height="58" valign="bottom"><img src="image/DEGREE.JPG" width="43" height="43" align="absmiddle"></td>
 		<td valign="bottom" > <a href="result.php" class="style4">Result </a></td>
-		
+
 	</tr>
 	</table>
 	<br><br>';
@@ -149,7 +151,7 @@ if (isset($_SESSION['login']))
 	  <span class="style7">
 	  <img src="image/HLPBUTT2.JPG" width="50" height="50">
 	  <img src="image/BOOKPG.JPG" width="43" height="43">
-	  </span>        
+	  </span>
 	  </span>
         <param name="movie" value="english theams two brothers.dat">
         <param name="quality" value="high">
@@ -183,7 +185,7 @@ if (isset($_SESSION['login']))
 					       <?php
 		  if(isset($found))
 		  {
-		  		//echo "Invalid Username or Password";				
+		  		//echo "Invalid Username or Password";
 				echo '<script>alert("Invalid Username or Password")</script>';
 			  	session_destroy();
 				header("Location: index.php");
