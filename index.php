@@ -39,9 +39,9 @@ session_start();
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php">Eklavya</a>
+	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><b>Eklavya</b></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
+	      <span class="navbar-toggler-icon"></span>	
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav justify-content-end">
@@ -55,6 +55,7 @@ session_start();
 </div>
 
 			 		<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+					 <a class="btn btn-outline-info btn-lg " href="admin/index.php" class="button">Admin Login</a>
 					<a class="btn btn-outline-info btn-lg " href="signup.php" class="button">Register</a>
 		  		   <!--<button class="btn btn-secondary float-end" type="button" href="signup.php">Register</button> -->
 				</div>
@@ -117,9 +118,9 @@ if (isset($_SESSION['login']))
 
 	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a> | <td>
 	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
-	</td> | <a class='btn btn-warning' onclick='return confirm('Are you sure to logout?');' value='click' href=\"signout.php\" >Sign Out</a> |
-	 <a class='btn btn-danger'
-	href='delete.php?uid=$_SESSION[login]' onclick='return confirm('Are you sure to delete account?');'>Delete Account</a></strong></div>";
+	</td> | <a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a> |
+	 <a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]' 
+	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong></div>";
 
 	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";
 		echo '<table width="28%"  border="0" align="center">
@@ -201,7 +202,6 @@ if (isset($_SESSION['login']))
     </form></td>
   </tr>
 </table>
-
 
 	<footer class ="footer" id="footer">
 		<div class="container-fluid">
