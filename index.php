@@ -116,10 +116,10 @@ if (isset($_SESSION['login']))
 {
 	//echo '<th align=\"right\"> </div><a class="btn btn-info" href=\"signout.php\">Sign Out</a></th>';
 
-	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a> | <td>
+	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a>&nbsp<td>
 	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
-	</td> | <a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a> |
-	 <a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]' 
+	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out
+	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]' 
 	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong></div>";
 
 	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";
