@@ -22,7 +22,7 @@ if($submit=='Finish')
 
 <body>
 <?php
-include("header.php");
+//include("header.php");
 echo "<h1 class=head1> Review Test Question</h1>";
 
 if(!isset($_SESSION['qn']))
