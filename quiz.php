@@ -98,16 +98,16 @@ $row= mysqli_fetch_row($rs);
 echo "<form name=myfm method=post action=quiz.php>";
 echo "<table width=100%> <tr> <td width=30>&nbsp;<td> <table border=0>";
 $n=$_SESSION['qn']+1;
-echo "<tR><td><span class=style2>Que ".  $n .": $row[2]</style>";
+echo "<tR><td><span class=style2>Ques ".  $n .": $row[2]</style>";
 echo "<tr><td class=style8><input type=radio name=ans value=1>$row[3]";
 echo "<tr><td class=style8> <input type=radio name=ans value=2>$row[4]";
 echo "<tr><td class=style8><input type=radio name=ans value=3>$row[5]";
 echo "<tr><td class=style8><input type=radio name=ans value=4>$row[6]";
 
 if($_SESSION['qn']<mysqli_num_rows($rs)-1)
-echo "<tr><td><input type=submit name=submit value='Next Question'></form>";
+echo "<tr><td><input type=submit name=submit class=next-review value='Next Question'></form>";
 else
-echo "<tr><td><input type=submit name=submit value='Get Result'></form>";
+echo "<tr><td><input type=submit name=submit class=next-review value='Get Result'></form>";
 echo "</table></table>";
 ?>
 </body>

@@ -9,7 +9,8 @@ body {
 .style2 {
 	color: #990000;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
+	padding: 10px;
 }
 .style4 {
 	color: #000000;
@@ -25,6 +26,7 @@ body {
 	color: #6633CC;
 	font-weight: bold;
 	font-size: 18px;
+	padding:5px;
 }
 a:link {
 	color: #330066;
@@ -76,9 +78,11 @@ a:visited {
 }
 .next-review{
 	padding: 5px 15px;
-        background: #99e0b2;
-        border: 1px black solid;
-        cursor: pointer;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
+	margin: 10px 0px;
+    background: rgb(195, 216, 121);
+    border: 1px black solid;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	font-size: 18px;
 }
