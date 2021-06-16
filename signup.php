@@ -132,7 +132,7 @@ include("header.php");
          </tr>
          <tr>
            <td>&nbsp;</td>
-           <td><input class="btn btn-danger" type="submit" name="Submit" value="Signup">
+           <td><input class="btn btn-success" type="submit" name="Submit" value="Signup">
            </td>
          </tr>
        </table>
