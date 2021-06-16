@@ -7,6 +7,7 @@ body {
 -->
 </style>
 
+
 <!--<table border="0" width="100%" cellspacing="0" cellpadding="0" background="image/click.png">
   <tr>
     <td width="90%" valign="top">
@@ -19,7 +20,7 @@ height=68>
 <param name=quality value=high>
 <param name=BGCOLOR value=#000000>
 <param name=SCALE value=showall>
-<param name=wmode value=transparent> 
+<param name=wmode value=transparent>
 <embed src=image/fence.swf
 quality=high
 pluginspage=http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash type=application/x-shockwave-flash
@@ -41,11 +42,11 @@ scale= showall>
   <Table width="100%">
   <tr>
   <td>
-  <?php @$_SESSION['login']; 
+  <?php @$_SESSION['login'];
   error_reporting(1);
   ?>
   </td>
-	
+
   </tr>
-  
+
 </table>

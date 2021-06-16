@@ -7,9 +7,9 @@ session_start();
 <title>Welcome to Online Exam</title>
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+<!-- <link href="quiz.css" rel="stylesheet" type="text/css"> -->
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="/css_/styles.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -41,7 +41,7 @@ session_start();
 	  <div class="container-fluid">
 	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><b>Eklavya</b></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>	
+	      <span class="navbar-toggler-icon"></span>
 	    </button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 
@@ -121,7 +121,7 @@ if (isset($_SESSION['login']))
 	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a>&nbsp<td>
 	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
 	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out
-	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]' 
+	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
 	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong></div>";
 
 	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";

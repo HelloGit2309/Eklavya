@@ -7,10 +7,11 @@ include("header.php");
 <head>
 <title>Online Quiz - Quiz List</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="css_/sublist.css">
 <link href="quiz.css" rel="stylesheet" type="text/css">
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
 <!-- <link rel="stylesheet" href="css_/styles.css"> -->
-<link rel="stylesheet" href="css_/sublist.css">
+
 </head>
 <body>
 <?php
