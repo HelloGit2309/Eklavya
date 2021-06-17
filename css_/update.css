@@ -5,3 +5,13 @@ body {
 	background-repeat: no-repeat;
   background-size: cover;
 }
+.submit{
+	padding: 5px 15px;
+	margin: 10px 0px;
+    background: rgb(195, 216, 121);
+    border: 1px black solid;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	font-size: 18px;
+}
