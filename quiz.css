@@ -1,5 +1,5 @@
 body {
-	background: url(registration.jpg);
+	background: url(background.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
 	background-repeat: no-repeat;
@@ -37,10 +37,10 @@ h1{
 }
 .style5 {color: #990033}
 .style6 {color: #ECE9D8}
-/* .style7 {
+.style7 {
 	color: #993300;
 	font-weight: bold;
-} */
+}
 .style8 {
 	color: #6633CC;
 	font-weight: bold;

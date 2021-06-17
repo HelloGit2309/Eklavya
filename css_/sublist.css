@@ -1,25 +1,45 @@
+body {
+	background: url(background.jpg);
+	margin-left: 0px;
+	margin-top: 0px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1{
   text-align: center;
   padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color:#FFFFFF;
 }
 
-table {
-    border: 1px solid #CCC;
 
-    border-collapse: separate;
-    /* border-collapse: collapse; */
-    border-spacing: 10px;
-    padding-bottom: 40px;
-}
 
 td {
   padding-top: 1em;
    padding-bottom: 2em;
-  text-align: center;
+
+  color: #FFFFFF;
   /* margin-bottom: 100px; */
   /* padding: 7px; */
+  text-decoration: none;
   border: none;
 }
+
+#Table{
+
+  text-align: center;
+  margin-left:500px;
+  text-decoration: none;
+}
+
+#subject{
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 /* .subjects{
   text-align: center;
@@ -27,3 +47,19 @@ td {
   padding-bottom: 10px;
   padding-top: 10px;
 } */
+
+
+
+
+/* inside different subjects */
+
+#quizName{
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#topic{
+  color: #FFFFFF;
+  text-decoration: none;
+
+}

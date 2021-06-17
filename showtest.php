@@ -6,7 +6,8 @@ session_start();
 <head>
 <title>Online Quiz - Test List</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+<!-- <link href="quiz.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="css_/sublist.css">
 </head>
 <body>
 <?php
@@ -19,15 +20,15 @@ echo "<h1 align=center> $row1[1]</font></h1>";
 $rs=mysqli_query($con,"select * from mst_test where sub_id=$subid");
 if(mysqli_num_rows($rs)<1)
 {
-	echo "<br><br><h2 class=head1> No Quiz for this Subject </h2>";
+	echo "<br><br><h2 id='quizName'> No Quiz for this Subject </h2>";
 	exit;
 }
-echo "<br><h2 class=head1><font color=red> Select Quiz Name to Give Quiz </h2>";
+echo "<br><h2 id='quizName'> Choose a topic</h2>";
 echo "<table align=center>";
 $idx=1;
 while($row=mysqli_fetch_row($rs))
 {
-	echo "<br><br><tr><td align=center><a href=quiz.php?testid=$row[0]&subid=$subid><font size=4>$idx . $row[2]</font></a>";
+	echo "<br><br><tr><td align=center><a href=quiz.php?testid=$row[0]&subid=$subid><font id='topic' size=4>$idx . $row[2]</font></a>";
 	$idx++;
 }
 echo "</table>";

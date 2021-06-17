@@ -39,7 +39,7 @@ session_start();
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand" href="Location: index.php"><h3>Eklavya</h3></a>
+	    <a style="text-decoration:none" class="navbar-brand"  href="index.php"><h3>Eklavya</h3></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -58,7 +58,7 @@ session_start();
 
 			 </ul>
 	  </div>
-	
+
 		<div class="float-right">
 			<ul class ="navbar-nav justify-content-end">
 				<li>
@@ -118,25 +118,65 @@ if (isset($_SESSION['login']))
 {
 	//echo '<th align=\"right\"> </div><a class="btn btn-info" href=\"signout.php\">Sign Out</a></th>';
 
-	echo "<div align=\"right\"><strong><a class='btn btn-success' href=\"index.php\"> Home </a>&nbsp<td>
-	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
-	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out
-	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
-	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong></div>";
+	// <a class='btn btn-success' href=\"index.php\"> Home </a>&nbsp<td>
+// <td height="58" valign="bottom"><img src="image/DEGREE.JPG" width="43" height="43" align="absmiddle"></td>
+// <td width="7%" height="65" valign="bottom"><img src="images/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
 
-	echo "<h1 class='text-center bg-info'>Welcome to Online Exam</h1>";
-		echo '<table width="28%"  border="0" align="center">
-  	<tr>
-		<td width="7%" height="65" valign="bottom"><img src="images/HLPBUTT2.JPG" width="50" height="50" align="middle"></td>
-		<td width="93%" valign="bottom" bordercolor="#0000FF"> <a href="sublist.php" class="style4">Subject for Quiz </a></td>
+	echo "<h1 class='text-center '>Welcome to Online Exam</h1>";
+		echo '<table width="0%"  border="0" align="center">
+  	<tr  >
+		<td class="options" width="93%" valign="bottom" bordercolor="#0000FF"> <a href="sublist.php" class="style4">Subject for Quiz </a></td>
 	</tr>
 	<tr>
-		<td height="58" valign="bottom"><img src="image/DEGREE.JPG" width="43" height="43" align="absmiddle"></td>
-		<td valign="bottom" > <a href="result.php" class="style4">Result </a></td>
+
+		<td class="options" valign="bottom" > <a href="result.php" class="style4">Result </a></td>
 
 	</tr>
 	</table>
 	<br><br>';
+	echo "
+
+
+
+	<div class='login'><strong>
+
+
+	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
+
+	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
+		<br><br>
+	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
+	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
+
+	 </div>";
+
+	 echo "
+	 <style>
+
+ 	h1{
+ 		color:#FFFFFF;
+ 	}
+ 	body{
+ 		background:url(background.jpg);
+ 		// margin-left: 0px;
+ 		// margin-top: 0px;
+ 		background-repeat: no-repeat;
+ 	  background-size: cover;
+ 	}
+
+	btn{
+		margin-top: 10px;
+	}
+
+	a{
+		color:#d0d0d0;
+		size:100px;
+		text-decoration:none;
+		font-size: 30px;
+		align: center;
+	}
+
+ 	</style>";
 		exit;
 }
 
