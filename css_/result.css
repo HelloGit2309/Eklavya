@@ -1,0 +1,28 @@
+.style2 {
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.style8 {
+	color:yellow;
+	font-weight: bold;
+	font-size: 18px;
+	padding:5px;
+}
+
+.head1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	color:white;
+	text-align: center;
+	font-weight: bold;
+}
+body {
+	background: url(background.jpg);
+	margin-left: 0px;
+	margin-top: 0px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
