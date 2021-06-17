@@ -1,5 +1,6 @@
 body{
-    /* background-color:red; */
+
+
   }
 
 
@@ -40,14 +41,41 @@ body{
     padding: 7% 15%;
   } */
 
+.carousel{
+  size: 10px;
 
+}
   .end-section {
 
     /* margin-bottom: 0; */
   }
 
+/* user logged in */
+
+.login{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.text-center{
+
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.options{
+  /* text-size: 20px; */
+  padding-bottom: 20px;
+  text-align: center;;
+}
+
+.style4{
+  text-align: center;
+}
 
 
+/* user logged in end */
 
 
   /* footer section */

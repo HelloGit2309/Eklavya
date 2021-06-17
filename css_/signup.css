@@ -1,5 +1,5 @@
 body {
-	background: url(registration.jpg);
+	background: url(background.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
 	background-repeat: no-repeat;
@@ -14,6 +14,7 @@ h1{
 .form-control{
 	margin-bottom: 10px;
 }
+
 .myTable{
 
 	text-align: center;
