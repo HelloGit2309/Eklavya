@@ -27,7 +27,8 @@ if(!isset($_SESSION['sid']) || !isset($_SESSION['tid']))
 <head>
 <title>Online Quiz</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+<link href="css_/quiz.css" rel="stylesheet" type="text/css">
+<link href="css_/footer.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

@@ -12,9 +12,14 @@ $phone = $res['phone'];
 $add = $res['address'];
 $city = $res['city'];
 ?>
+<?php
+include("header.php");
+?>
 <html>
 <head>	
-	<title>Edit Data</title>
+	<title>Update Profile</title>
+	<link rel="stylesheet" href="css_/update.css">
+	<link rel="stylesheet" href="css_/footer.css">
 </head>
 
 <body>
@@ -29,11 +34,11 @@ $city = $res['city'];
 			</tr>
 		<tr> 
 				<td>Email</td>
-				<td><input type="text" name="email" value="<?php echo $email;?>"></td>
+				<td><input type="email" name="email" value="<?php echo $email;?>"></td>
 			</tr>
             <tr> 
 				<td>Phone No</td>
-				<td><input type="text" name="phone" value="<?php echo $phone;?>"></td>
+				<td><input type="phone" name="phone" value="<?php echo $phone;?>"></td>
 			</tr>
             <tr> 
 				<td>Address</td>
@@ -51,3 +56,6 @@ $city = $res['city'];
 	</form>
 </body>
 </html>
+<?php
+include("footer.php");
+?>
