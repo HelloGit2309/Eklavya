@@ -30,8 +30,7 @@ bgcolor=#000000
 scale= showall>
 </embed>
 </object></div></td>-->
-    <td width="10%">
-     <img border="0" src="image/h.jpg" width="100%" height="150" align="right"></td>
+    
   </tr>
 </table>
 <!--<table border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#000000" background="img/blackbar.jpg">

@@ -1,110 +1,17 @@
-<<<<<<< HEAD
-body{
 
+body{
+  /* font-family: 'Roboto', sans-serif; */
 
   }
-
+h2{
+  margin-bottom: 0;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
 
   p {
       color: #FFFFFF;
     }
-
-
-  /* header section */
-
-  .navbar-light{
-    padding-top:10px;
-    padding-bottom:10px;
-  }
-
-  .navbar-brand{
-      font-family: 'Roboto', sans-serif;
-      font-size: 50px;
-      font-weight: bold;
-      /* color: #FFFFFF; */
-  }
-
-
-  .navbar{
-    /* padding: 0 0 4.5rem; */
-    font-size: 20px;
-    padding-bottom: 25px;
-    background-color: #3c8dad;
-    text-decoration-color: #FFFFFF;
-  }
-
-  .big-heading{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-  }
-
-  /* .container-fluid{
-    padding: 7% 15%;
-  } */
-
-.carousel{
-  size: 10px;
-
-}
-  .end-section {
-
-    /* margin-bottom: 0; */
-  }
-
-/* user logged in */
-
-.login{
-    margin-top: 10px;
-    margin-bottom: 90px;
-    text-align: center;
-}
-
-.text-center{
-
-  margin-top: 90px;
-  margin-bottom: 90px;
-}
-
-.options{
-  /* text-size: 20px; */
-  padding-bottom: 20px;
-  text-align: center;;
-}
-
-.style4{
-  text-align: center;
-}
-
-
-/* user logged in end */
-
-
-  /* footer section */
-  footer{
-    /* padding-top: 50px; */
-    text-align: center;
-
-  }
-
-
-  .footer{
-    padding: 7% 15%;
-    margin:0;
-    padding-top: 17px;
-    background-color: #3c8dad;
-    padding-bottom: 40px;
-  }
-
-  .social{
-    text-align: center;
-    padding-top: 50px;
-    margin: 30px 10px;
-
-  }
-=======
-p {
-    color: #FFFFFF;
-  }
 
 /* header section */
 
@@ -116,16 +23,24 @@ p {
 .navbar-brand{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    font-weight: bold;
-    /* color: #FFFFFF; */
+    font-weight: 900;
+    letter-spacing: 1px;
+    /* #FFFFFF */
+    color: #FFFFFF;
 }
 
+.tab-items{
+  color: rgba(255, 255, 255, 0.7);
+}
 .navbar{
-  /* padding: 0 0 4.5rem; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-weight: 500;
   font-size: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   background-color: #3c8dad;
-  text-decoration-color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
+
+  /* letter-spacing: 1px; */
 }
 
 .big-heading{
@@ -170,16 +85,83 @@ text-align: center;
 /* user logged in end */
 
 
+
+/* login page */
+
+#initials{
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #3c8dad;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: -5px;
+  padding-bottom: 150px;
+  padding-top: 90px;
+   display:inline-block;
+
+}
+
+.tagline{
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.description{
+  width: 50%;
+  line-height: 1.6;
+}
+
+.loginform{
+    background-color: #EEEEEE;
+}
+.Loginpage{
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#Logintext{
+letter-spacing: 2px;
+margin-right: 50px;
+margin-bottom: -1px;
+color:#343A40;
+margin-top: 100px;
+}
+
+.text{
+  text-align: right;
+  padding-right: 20px;
+  color:#343A40;
+}
+
+.button{
+  margin-bottom: 30px;
+}
+
+.errors{
+  padding-top: 40px;
+  padding-bottom: 70px;
+  padding-left: 30px;
+}
+
+.form-control{
+  width: 60%;
+}
+
 /* footer section */
 footer{
+  margin-top: 90px;
   padding-top: 50px;
   text-align: center;
 
 }
 
+
+
 .footer{
   padding: 7% 15%;
-  margin:0;
   padding-top: 17px;
   background-color: #3c8dad;
   padding-bottom: 40px;
@@ -191,4 +173,3 @@ footer{
   margin: 30px 10px;
 
 }
->>>>>>> 8c0685e9a553f18fb0e2ea5eafe4224b25c33fb7
