@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 
 
@@ -100,3 +101,94 @@ body{
     margin: 30px 10px;
 
   }
+=======
+p {
+    color: #FFFFFF;
+  }
+
+/* header section */
+
+.navbar-light{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.navbar-brand{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    /* color: #FFFFFF; */
+}
+
+.navbar{
+  /* padding: 0 0 4.5rem; */
+  font-size: 20px;
+  padding-bottom: 25px;
+  background-color: #3c8dad;
+  text-decoration-color: #FFFFFF;
+}
+
+.big-heading{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* .container-fluid{
+  padding: 7% 15%;
+} */
+
+.carousel{
+size: 10px;
+
+}
+
+/* user logged in */
+
+.login{
+  margin-top: 10px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.text-center{
+
+margin-top: 90px;
+margin-bottom: 90px;
+}
+
+.options{
+/* text-size: 20px; */
+padding-bottom: 20px;
+text-align: center;;
+}
+
+.style4{
+text-align: center;
+}
+
+
+/* user logged in end */
+
+
+/* footer section */
+footer{
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+.footer{
+  padding: 7% 15%;
+  margin:0;
+  padding-top: 17px;
+  background-color: #3c8dad;
+  padding-bottom: 40px;
+}
+
+.social{
+  text-align: center;
+  padding-top: 50px;
+  margin: 30px 10px;
+
+}
+>>>>>>> 8c0685e9a553f18fb0e2ea5eafe4224b25c33fb7

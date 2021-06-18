@@ -5,8 +5,9 @@ session_start();
 <html>
 <head>
 <title>Online Quiz  - Result </title>
+<link rel="stylesheet" href="css_/result.css">
+<link rel="stylesheet" href="css_/footer.css">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,6 +30,7 @@ while($row=mysqli_fetch_row($rs))
 echo "<tr class=style8><td>$row[0] <td align=center> $row[1] <td align=center> $row[3]";
 }
 echo "</table>";
+include("footer.php");
 ?>
 </body>
 </html>

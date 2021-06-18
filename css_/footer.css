@@ -1,0 +1,20 @@
+p {
+    color: #FFFFFF;
+  }
+
+.footer{
+    margin-top: 120px;
+    padding: 7% 15%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+  
+.social{
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 10px;
+}
+.container-fluid{
+    text-align: center;
+}
+  

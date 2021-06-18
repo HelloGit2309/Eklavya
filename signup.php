@@ -80,6 +80,7 @@ function check()
   }
 
 </script>
+<link href="css_/footer.css" rel="stylesheet" type="text/css">
 <link href="css_/signup.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -94,10 +95,11 @@ function check()
 <?php
 include("header.php");
 ?>
+<br>
  <table width="90%" border="0">
    <tr>
      <!-- <td width="132" rowspan="2" valign="top"><span class="style8"><img src="images/connected_multiple_big.jpg" width="131" height="155"></span></td> -->
-     <h1 >REGISTRATION PAGE</h1>
+     <h1 style="color:white;">REGISTRATION PAGE</h1>
    </tr>
 
    <tr>
@@ -153,3 +155,6 @@ include("header.php");
  <p>&nbsp; </p>
 </body>
 </html>
+<?php
+include("footer.php");
+?>

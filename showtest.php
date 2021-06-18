@@ -8,6 +8,7 @@ session_start();
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- <link href="quiz.css" rel="stylesheet" type="text/css"> -->
 <link rel="stylesheet" href="css_/sublist.css">
+<link rel="stylesheet" href="css_/footer.css">
 </head>
 <body>
 <?php
@@ -32,6 +33,7 @@ while($row=mysqli_fetch_row($rs))
 	$idx++;
 }
 echo "</table>";
+include("footer.php");
 ?>
 </body>
 </html>

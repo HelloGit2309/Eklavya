@@ -14,8 +14,6 @@ h1{
   color:#FFFFFF;
 }
 
-
-
 td {
   padding-top: 1em;
    padding-bottom: 2em;
@@ -28,28 +26,16 @@ td {
 }
 
 #Table{
-
   text-align: center;
-  margin-left:500px;
+  margin-left:620px;
   text-decoration: none;
 }
 
 #subject{
-  color: #FFFFFF;
+  color:yellow;
   text-align: center;
   text-decoration: none;
 }
-
-
-/* .subjects{
-  text-align: center;
-  margin-bottom: 100px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-} */
-
-
-
 
 /* inside different subjects */
 
@@ -59,7 +45,6 @@ td {
 }
 
 #topic{
-  color: #FFFFFF;
+  color: yellow;
   text-decoration: none;
-
 }
