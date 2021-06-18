@@ -18,7 +18,7 @@ body{
 
   .navbar-brand{
       font-family: 'Roboto', sans-serif;
-      font-size: 40px;
+      font-size: 50px;
       font-weight: bold;
       /* color: #FFFFFF; */
   }
@@ -80,7 +80,7 @@ body{
 
   /* footer section */
   footer{
-    padding-top: 50px;
+    /* padding-top: 50px; */
     text-align: center;
 
   }

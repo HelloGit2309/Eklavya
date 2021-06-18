@@ -141,11 +141,11 @@ if (isset($_SESSION['login']))
 	<div class='login'><strong>
 
 
-	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
+	<a class='btn btn-outline-success' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
 
-	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
+	</td>&nbsp<a class='btn btn-outline-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
 		<br><br>
-	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
+	</a>&nbsp&nbsp<a class='btn btn-outline-danger' href='delete.php?uid=$_SESSION[login]'
 	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
 
 	 </div>";
