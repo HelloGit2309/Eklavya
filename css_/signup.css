@@ -16,34 +16,33 @@ h1{
 }
 
 .myTable{
-
 	text-align: center;
-
 	border-collapse: collapse;
 	padding-bottom: 10px;
 	vertical-align: center;
-  border-top: 0;
-
-
+  	border-top: 0;
 }
+
 .style1 {
 	color: #FFFFFF;
-	/* font-weight: bold; */
 }
+
 .style2 {
 	color: #990000;
-	/* font-weight: bold; */
 }
+
 .style4 {
 	color: #000000;
-	/* font-weight: bold; */
 }
+
 .style5 {color: #990033}
+
 .style6 {color: #ECE9D8}
-/* .style7 {
-	color: #993300;
-	font-weight: bold;
-} */
+
+.style7 {
+    font-weight: bold;
+	color:yellow;
+} 
 .style8 {
 	color: #6633CC;
 	/* font-weight: bold; */

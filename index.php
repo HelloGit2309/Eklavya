@@ -4,13 +4,11 @@ session_start();
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Welcome to Online Exam</title>
+<title>Eklavya-Welcome to Online Exam</title>
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"/> -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- <link href="quiz.css" rel="stylesheet" type="text/css"> -->
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css_/styles.css">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootsrap Scripts -->
@@ -28,26 +26,23 @@ session_start();
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-<!-- CSS styless -->
+<!-- CSS styles -->
 
 <link rel="stylesheet" href="css_/styles.css">
 </head>
 
 <body>
 
-
 	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c8dad;">
 
 	  <div class="container-fluid">
-	    <a style="text-decoration:none" class="navbar-brand"  href="index.php"><h3>Eklavya</h3></a>
+	    <a style="text-decoration:none" class="navbar-brand"  href="index.php"><h2>Eklavya</h2></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-
-
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav justify-content-end">
+	    	<div class="collapse navbar-collapse" id="navbarNav">
+	      		<ul class="navbar-nav justify-content-end">
 
 					<li class="nav-item">
 						<a style="text-decoration:none" class="nav-link" href="#"><b>About</b></a>
@@ -56,8 +51,8 @@ session_start();
 						<a style="text-decoration:none" class="nav-link" href="#footer"><b>Contact</b></a>
 					</li>
 
-			 </ul>
-	  </div>
+			 	</ul>
+	  		</div>
 
 		<div class="float-right">
 			<ul class ="navbar-nav justify-content-end">
@@ -134,24 +129,16 @@ if (isset($_SESSION['login']))
 	</tr>
 	</table>
 	<br><br>';
-	echo "
 
-
-
-	<div class='login'><strong>
-
-
+	echo "<div class='login'><strong>
 	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
-
 	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
-		<br><br>
+	<br><br>
 	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
-	 onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
+	onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
+	</div>";
 
-	 </div>";
-
-	 echo "
-	 <style>
+	echo "<style>
 
  	h1{
  		color:#FFFFFF;
@@ -179,7 +166,6 @@ if (isset($_SESSION['login']))
  	</style>";
 		exit;
 }
-
 
 ?>
 <table width="100%" border="0">
@@ -249,10 +235,10 @@ if (isset($_SESSION['login']))
 		<div class="container-fluid">
 			<h3 class="social fab fa-linkedin"></h3>
 			<h3 class="social fab fa-facebook"></h3>
-		<h3 class="social fab fa-instagram"></h3>
-		 <h3 class="social fab fa-twitter"></h3>
-		 <p>© Copyright 2021 EKLAVYA</p>
-	 </div>
+			<h3 class="social fab fa-instagram"></h3>
+		 	<h3 class="social fab fa-twitter"></h3>
+		 	<p>© Copyright 2021 EKLAVYA</p>
+	 	</div>
 	</footer>
 
 

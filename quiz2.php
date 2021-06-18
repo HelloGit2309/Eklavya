@@ -3,7 +3,7 @@
 <head>
 <title>Online Quiz</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+<link href="css_/quiz.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 <!--
 .style9 {
@@ -60,7 +60,7 @@ scale= showall>
 </table>
 <table width="100%"  border="0">
   <tr>
-    <td width="89%"><span class="style9">WelCome Dhaval</span></td>
+    <td width="89%"><span class="style9">Welcome</span></td>
     <td width="11%"><span class="style10">Signout</span></td>
   </tr>
 </table>

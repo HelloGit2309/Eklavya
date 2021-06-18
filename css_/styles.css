@@ -1,102 +1,89 @@
-body{
-
-
+p {
+    color: #FFFFFF;
   }
 
+/* header section */
 
-  p {
-      color: #FFFFFF;
-    }
+.navbar-light{
+  padding-top:10px;
+  padding-bottom:10px;
+}
 
-
-  /* header section */
-
-  .navbar-light{
-    padding-top:10px;
-    padding-bottom:10px;
-  }
-
-  .navbar-brand{
-      font-family: 'Roboto', sans-serif;
-      font-size: 40px;
-      font-weight: bold;
-      /* color: #FFFFFF; */
-  }
-
-
-  .navbar{
-    /* padding: 0 0 4.5rem; */
-    font-size: 20px;
-    padding-bottom: 25px;
-    background-color: #3c8dad;
-    text-decoration-color: #FFFFFF;
-  }
-
-  .big-heading{
+.navbar-brand{
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-  }
+    font-size: 40px;
+    font-weight: bold;
+    /* color: #FFFFFF; */
+}
 
-  /* .container-fluid{
-    padding: 7% 15%;
-  } */
+.navbar{
+  /* padding: 0 0 4.5rem; */
+  font-size: 20px;
+  padding-bottom: 25px;
+  background-color: #3c8dad;
+  text-decoration-color: #FFFFFF;
+}
+
+.big-heading{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+/* .container-fluid{
+  padding: 7% 15%;
+} */
 
 .carousel{
-  size: 10px;
+size: 10px;
 
 }
-  .end-section {
-
-    /* margin-bottom: 0; */
-  }
 
 /* user logged in */
 
 .login{
-    margin-top: 10px;
-    margin-bottom: 90px;
-    text-align: center;
+  margin-top: 10px;
+  margin-bottom: 90px;
+  text-align: center;
 }
 
 .text-center{
 
-  margin-top: 90px;
-  margin-bottom: 90px;
+margin-top: 90px;
+margin-bottom: 90px;
 }
 
 .options{
-  /* text-size: 20px; */
-  padding-bottom: 20px;
-  text-align: center;;
+/* text-size: 20px; */
+padding-bottom: 20px;
+text-align: center;;
 }
 
 .style4{
-  text-align: center;
+text-align: center;
 }
 
 
 /* user logged in end */
 
 
-  /* footer section */
-  footer{
-    padding-top: 50px;
-    text-align: center;
+/* footer section */
+footer{
+  padding-top: 50px;
+  text-align: center;
 
-  }
+}
 
+.footer{
+  padding: 7% 15%;
+  margin:0;
+  padding-top: 17px;
+  background-color: #3c8dad;
+  padding-bottom: 40px;
+}
 
-  .footer{
-    padding: 7% 15%;
-    margin:0;
-    padding-top: 17px;
-    background-color: #3c8dad;
-    padding-bottom: 40px;
-  }
+.social{
+  text-align: center;
+  padding-top: 50px;
+  margin: 30px 10px;
 
-  .social{
-    text-align: center;
-    padding-top: 50px;
-    margin: 30px 10px;
-
-  }
+}
