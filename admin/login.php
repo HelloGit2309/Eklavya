@@ -9,9 +9,10 @@ error_reporting(1);
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="../quiz.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/admin_css/testupdate.css">
 </head>
 
-<body>
+<body src="background.jpg">
 <?php
 include("header.php");
 include("../database.php");

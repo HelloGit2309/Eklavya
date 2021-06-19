@@ -45,10 +45,10 @@ session_start();
 	      		<ul class="navbar-nav justify-content-end">
 
 					<li class="nav-item">
-						<a style="text-decoration:none" class="nav-link" href="#"><b>About</b></a>
+						<a style="text-decoration:none" class="nav-link" href="#initials"><b class="tab-items">About</b></a>
 					</li>
 					<li class="nav-item">
-						<a style="text-decoration:none" class="nav-link" href="#footer"><b>Contact</b></a>
+						<a style="text-decoration:none" class="nav-link " href="#footer"><b class="tab-items">Contact</b></a>
 					</li>
 
 			 	</ul>
@@ -57,10 +57,10 @@ session_start();
 		<div class="float-right">
 			<ul class ="navbar-nav justify-content-end">
 				<li>
-				<a style="text-decoration:none;color:white" class="btn pd-2 btn-dark  me-2 mb-2 " href="admin/index.php"  >Admin Login</a>
+				<a style="text-decoration:none;color:white" class="btn pd-2 mt-2 btn-dark me-2 mb-2 " href="admin/index.php"  >Admin Login</a>
 			</li>
 			<li>
-				<a style="text-decoration:none" class = "btn btn-light  justify-content-md-end" href="signup.php">Register</a>
+				<a style="text-decoration:none" class = "btn btn-light mt-2  justify-content-md-end" href="signup.php">Register</a>
 			</li>
 		</ul>
 		</div>
@@ -131,10 +131,10 @@ if (isset($_SESSION['login']))
 	<br><br>';
 
 	echo "<div class='login'><strong>
-	<a class='btn btn-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
-	</td>&nbsp<a class='btn btn-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
+	<a class='btn btn-outline-primary' href='update.php?uid=$_SESSION[login]'>Update Profile</a>
+	</td>&nbsp<a class='btn btn-outline-warning' href=\"signout.php\" onClick=\"javascript: return confirm('Do you want to signout ?');\"  >Sign Out</a>
 	<br><br>
-	</a>&nbsp&nbsp<a class='btn btn-danger' href='delete.php?uid=$_SESSION[login]'
+	</a>&nbsp&nbsp<a class='btn btn-outline-danger' href='delete.php?uid=$_SESSION[login]'
 	onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
 	</div>";
 
@@ -171,62 +171,56 @@ if (isset($_SESSION['login']))
 <table width="100%" border="0">
 
   <tr>
-    <td height="296" valign="top"><div align="center">
-        <h1 class="style8">Welcome to Online Quiz</h1>
-      <span class="style5"><img src="image/paathshala.jpg" width="129" height="100">
-	  <span class="style7">
-	  <img src="image/HLPBUTT2.JPG" width="50" height="50">
-	  <img src="image/BOOKPG.JPG" width="43" height="43">
-	  </span>
-	  </span>
-        <param name="movie" value="english theams two brothers.dat">
+    <td height="296" valign="top">
+			<div id="initials" align="center">
+        <h1 class="tagline">Your ultimate destination for online assessment</h1>
+        <!-- <param name="movie" value="english theams two brothers.dat"> -->
         <param name="quality" value="high">
         <param name="movie" value="Drag to a file to choose it.">
         <param name="quality" value="high">
         <param name="BGCOLOR" value="#FFFFFF">
-<p align="left" class="style5">&nbsp;</p>
+				<p align="left" class="style5">&nbsp;</p>
       <blockquote>
-          <h4 align="center" class="style5"><span class="style7">Welcome to Online
+          <h4 class="description">Welcome to Online
             Exam. This site will provide the quiz for various subject of interest.
-            You need to login to take the online exam.</span></h4>
+            You need to login to take the online exam.</h4>
       </blockquote>
-    </div></td>
-    		<table align="center" border="0" WIDTH="50%" height="250">
-			<h1 class="text-center bg-warning">LOGIN PAGE</h1>
-			<br>
-		<form method="post" action="">
-		<center>
-		<img class="img-circle" src="1.jpg"  title="this is my profile pic" width="240px" height="190px" border="1" />
-		</center>	<br>
+    </div>
+	</td>
 
-				<tr>
-					<th class="text-primary">LOGIN ID</th>
-					<th>
-					<input class="form-control"type="TEXT" title="enter your registered LOGIN ID"  placeholder="LOGIN ID"  maxlength="10" size="25"  id="loginid2" name="loginid"/></tD>
-				</th>
-				<tr>
-					<th class="text-primary">ENTER PASSWORD</th>
-					<th><input class="form-control" type="password" placeholder="PASSWORD" name="pass" id="pass2"/></th>
-					</tr>
-					       <?php
-		  if(isset($found))
-		  {
-		  		//echo "Invalid Username or Password";
-				echo '<script>alert("Invalid Username or Password")</script>';
-			  	session_destroy();
-				header("Location: index.php");
-		  }
-		  ?>
-          </span></td>
-         <th></th>
-				<th class="errors">
-					<input class="btn btn-primary "type="submit" name="submit" id="submit" Value="Login"/>
+			<table class="Loginpage" width="50%" height="250" >
+		<h1 id="Logintext"align="center">Login</h1>
+		<br>
+	<form method="post" action="">
+			<tr >
+				<th class="text">Login Id</th>
+				<th>
+				<input class="form-control"type="TEXT" title="enter your registered LOGIN ID"  placeholder="Login Id"  maxlength="10" size="25" style="margin:30px;" name="loginid"/></tD>
+			</th>
+			<tr >
+				<th class="text">Enter Password</th>
+				<th><input class="form-control" type="password" placeholder="Password" style="margin:30px;" name="pass" /></th>
+				</tr>
+							 <?php
+		if(isset($found))
+		{
+				//echo "Invalid Username or Password";
+			echo '<script>alert("Invalid Username or Password")</script>';
+				session_destroy();
+			header("Location: index.php");
+		}
+		?>
+				</span></td>
+			 <th></th>
+			 <div class="button">
+				 <th class="errors">
+					<input class="btn btn-info md-2"type="submit" name="submit" id="submit" Value="Login"/>
 
-        <a class="btn btn-success " href="signup.php">Register / Sign Up</a></th>
-      </table>
-      <div align="center">
-        <p class="style5"><img src="images/topleft.jpg" width="134" height="128">          </p>
-        </div>
+				<a class="btn btn-dark " href="signup.php">Register / Sign Up</a>
+			</th>
+			 </div>
+
+		</table>
     </form></td>
   </tr>
 </table>
