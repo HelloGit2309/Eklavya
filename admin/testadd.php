@@ -16,8 +16,8 @@ require("../database.php");
 include("header.php");
 
 
-echo "<h2 class='text-center bg-primary'>ADD TEST</h2>";
-if($_POST[submit]=='Save' || strlen($_POST['subid'])>0 )
+echo "<h2 class='text-center bg-primary'><font color='orange'>ADD TEST</font></h2>";
+if($_POST['submit']=='Save' || strlen($_POST['subid'])>0 )
 {
 extract($_POST);
 mysqli_query($con,"insert into mst_test(sub_id,test_name,total_que) values ('$subid','$testname','$totque')",$cn) or die(mysqli_error());
@@ -45,7 +45,7 @@ return true;
 <form name="form1" method="post" onSubmit="return check();">
   <table class="table table-striped">>
     <tr>
-      <td width="49%" height="32"><div align="left"><strong>Enter Subject ID </strong></div></td>
+      <td style="color:white" width="49%" height="32"><div align="left"><strong>Enter Subject ID </strong></div></td>
       <td width="3%" height="5">  
       <td width="48%" height="32"><select class="form-control" name="subid">
 <?php
@@ -65,12 +65,12 @@ echo "<option value='$row[0]'>$row[1]</option>";
       </select>
         
     <tr>
-        <td height="26"><div align="left"><strong> Enter Test Name </strong></div></td>
+        <td style="color:white" height="26"><div align="left"><strong> Enter Test Name </strong></div></td>
         <td>&nbsp;</td>
 	  <td><input class="form-control" name="testname" type="text" id="testname"></td>
     </tr>
     <tr>
-      <td height="26"><div align="left"><strong>Enter Total Question </strong></div></td>
+      <td style="color:white" height="26"><div align="left"><strong>Enter Total Question </strong></div></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="totque" type="text" id="totque"></td>
     </tr>
