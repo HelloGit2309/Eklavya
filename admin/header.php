@@ -25,16 +25,14 @@
 	{
 	
 	 echo "<h4 class='text-success text-center btn btn-success'>
-	 <div align=\"left\"><strong>
+	 <div align=\"left\">
+	 <a style='color:#00ff00' href=\"login.php\">Admin Home</a>&emsp;&emsp;
 	 <a style='color:#00ff00' href=\"viewsub.php\">  View Subject</a>&emsp;&emsp;
 		<a style='color:#00ff00' href=\"testview.php\"> View Test</a>&emsp;&emsp;  
 	 <a style='color:#00ff00' href=\"questiondelete.php\">View Question</a>&emsp;&emsp;
 	 <a style='color:#00ff00' href=\"showuser.php\"> View User</a></strong>
-	 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	 <strong><a style='color:#00ff00' href=\"login.php\">Admin Home</a>&emsp;
-	 <a style='color:#00ff00' href=\"signout.php\">Signout</a></strong>&emsp;&emsp;
+	 &emsp;
+	 <strong></strong><a style='color:#00ff00' href=\"signout.php\">Signout</a>&emsp;
 	 </div></h4>";
 	 }
 	 else
