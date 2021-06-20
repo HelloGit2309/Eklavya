@@ -17,7 +17,7 @@ include("header.php");
 
 
 echo "<h2 class='text-center bg-primary'>ADD TEST</h2>";
-if($_POST[submit]=='Save' || strlen($_POST['subid'])>0 )
+if($_POST['submit']=='Save' || strlen($_POST['subid'])>0 )
 {
 extract($_POST);
 mysqli_query($con,"insert into mst_test(sub_id,test_name,total_que) values ('$subid','$testname','$totque')",$cn) or die(mysqli_error());
