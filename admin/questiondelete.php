@@ -15,20 +15,20 @@ session_start();
 include("header.php");
 include("../database.php");
 {
-$sql=mysqli_query($con,"select * from mst_question");	
-	
+$sql=mysqli_query($con,"select * from mst_question");
+
 	echo "<table class='table table-striped'>";
 	echo "<tr><th><a  class='btn btn-danger'href=\"questionadd.php\">Add Question </a>&emsp;&emsp;</th></tr>";
 	echo "<tr><th class='text-primary'>ID</th><th class='text-primary'>Question</th>
 	<th class='text-primary'>Update</th>
 	<th class='text-primary'>Delete</th></tR>";
-	
+
 	while($result=mysqli_fetch_assoc($sql))
 	{
 $id=$result['que_id'];
-	
-	echo "<tr>";	
-	echo "<td>".$result['que_id']. "</td>";
+
+	echo "<tr>";
+	echo "<td >".$result['que_id']. "</td>";
 	echo "<td>".$result['que_desc']."</td>";
 	echo "<td><a href='queupdate.php?que_id=$id'><span class='glyphicon glyphicon-edit'></span></a></td>";
 	echo "<td><a href='quedelete.php?que_id=$id'><span class='glyphicon glyphicon-trash'></span></a></td>";

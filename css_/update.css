@@ -5,13 +5,44 @@ body {
 	background-repeat: no-repeat;
   background-size: cover;
 }
-.submit{
-	padding: 5px 15px;
-	margin: 10px 0px;
-    background: rgb(195, 216, 121);
-    border: 1px black solid;
-    cursor: pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-	font-size: 18px;
+
+.home-heading{
+	padding-top: 10px;
+	color: #AAAAAA;
+	text-align: right;
+	text-decoration: none;
+	padding-right: 40px;
+	font-size: 20px;
+}
+.form-row{
+	font-size: 15px;
+	padding-left: 20px;
+}
+
+#label{
+	color: #CCF2F4;
+	padding-right: 20px;
+}
+.update-form{
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 50px;
+	border-collapse: separate;
+	border-spacing: 0 30px;
+}
+
+.btn-dark{
+	size: 20px;
+	font-size: 20px;
+	text-align:center;
+	padding-right: 30px;
+}
+
+
+.form-content{
+	border: 0;
+	border-radius: 2px;
+	font-size: 15px;
+	padding-right: 20px;
+	height: 35px;
 }

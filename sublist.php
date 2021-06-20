@@ -20,18 +20,27 @@ include("header.php");
 <!-- >>>>>>> 493ccb73b2826a7dc745988a4f648e594a79d3b5 -->
 </head>
 <body>
+	<div >
+
+		<a href="index.php" style="text-decoration:none;" ><h3 class="home-heading">Home </h3></a>
+
+	</div>
 <?php
 
 include("database.php");
 
+
 echo "<h1>Select Your Subject</h1>";
 $rs=mysqli_query($con,"select * from mst_subject");
-echo "<table id='Table'>";
+echo "
+<div id='Table'>
+<table id='contents'>";
 while($row=mysqli_fetch_row($rs))
 {
 	echo "<tr  ><td style='text-decoration:none' ><a href=showtest.php?subid=$row[0]><font id='subject' size=5>$row[1]</font></a>";
 }
-echo "</table>";
+echo "</table>
+</div>";
 include("footer.php");
 ?>
 
