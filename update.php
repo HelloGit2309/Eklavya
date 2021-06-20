@@ -23,29 +23,29 @@ include("header.php");
 </head>
 
 <body>
-	<div><strong><a href="index.php" ><h1 align="center">Home</h1></a></strong></div>
+	<div><strong><a href="index.php" ><h1 align="center"><p style="color:red">Home</p></h1></a></strong></div>
 	<br><br>
 	
 	<form name="form1" method="post" action="updating.php">
 		<table border="0">
 			<tr>
-				<td>Username</td>
+				<td><p style="color:yellow">Username</p></td>
 				<td><input type="text" name="name" value="<?php echo $name;?>"></td>
 			</tr>
 		<tr> 
-				<td>Email</td>
+				<td><p style="color:yellow">Email</p></td>
 				<td><input type="email" name="email" value="<?php echo $email;?>"></td>
 			</tr>
             <tr> 
-				<td>Phone No</td>
+				<td><p style="color:yellow">Phone No</p></td>
 				<td><input type="phone" name="phone" value="<?php echo $phone;?>"></td>
 			</tr>
             <tr> 
-				<td>Address</td>
+				<td><p style="color:yellow">Address</p></td>
 				<td><input type="text" name="add" value="<?php echo $add;?>"></td>
 			</tr>
             <tr> 
-				<td>City</td>
+				<td><p style="color:yellow">City</p></td>
 				<td><input type="text" name="city" value="<?php echo $city;?>"></td>
 			</tr>
 			<tr>

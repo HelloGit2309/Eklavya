@@ -21,7 +21,6 @@ session_start();
 <?php
 include("header.php");
 ?>
-
 <h1 >Adminstrative Login</h1>
 <form name="form1" method="post" action="login.php">
 <table class="">
@@ -43,7 +42,9 @@ include("header.php");
   </tr>
   <tr>
     <td class="style2">&nbsp;</td>
-    <td><input class="btn btn-dark" name="submit" type="submit" id="submit" value="Login"></td>
+    <td>
+    <input class="btn btn-dark" name="submit" type="submit" id="submit" value="Login"> 
+    </td>
   </tr>
 </table></td>
   </tr>

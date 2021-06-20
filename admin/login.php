@@ -40,7 +40,7 @@ else if(!isset($_SESSION['alogin']))
 		exit;
 }
 
-		echo"<h1 class='text-center bg-danger'>Welcome to Admistrative Area</h1>";
+		echo"<h1 class='text-center bg-danger' style='color:#cc99ff' align='center'>Welcome to Admistrative Area</h1>";
 
 
 

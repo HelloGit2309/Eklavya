@@ -16,7 +16,7 @@ if (!isset($_SESSION[alogin]))
 	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
 	exit();
 }
-echo "<h2 class='text-center bg-primary'>ADD Question</h2>";
+echo "<h2 style='color:#ff6600' class='text-center bg-primary'>ADD Question</h2>";
 if($_POST[submit]=='Save' || strlen($_POST['testid'])>0 )
 {
 extract($_POST);

@@ -20,21 +20,21 @@ include("../database.php");
 		echo "<table class='table table-striped'>";
 		echo"<h1 class='text-center bg-danger'>Registered User Detail</h1>";
 		echo "<tr>
-		<th class='text-primary'>UserID</th>
-				<th class='text-primary'>Name</th>
-	<th class='text-primary'>Email</th>
-	<th class='text-primary'>Delete User</th></tR>";
+		<th style='color:#6699ff' class='text-primary'>UserID</th>
+				<th style='color:#6699ff' class='text-primary'>Name</th>
+	<th style='color:#6699ff' class='text-primary'>Email</th>
+	<th style='color:#6699ff' class='text-primary'>Delete User</th></tR>";
 	
 	while($result=mysqli_fetch_assoc($sql))
 	{
 	$id=$result['username'];
 	
 	echo "<tr>";	
-	echo "<td>".$result['login']. "</td>";
-	echo "<td>".$result['username']."</td>";
-	echo "<td>".$result['email']."</td>";
+	echo "<td style='color:#ff5050' >".$result['login']. "</td>";
+	echo "<td style='color:#ff5050' >".$result['username']."</td>";
+	echo "<td style='color:#ff5050' >".$result['email']."</td>";
 	
-	echo "<td><a href='userdelete.php?username=$id'><span class='glyphicon glyphicon-trash'></span></a></td>";
+	echo "<td><a style='color:#ff6600' href='userdelete.php?username=$id'><span class='glyphicon glyphicon-trash'>Delete</span></a></td>";
 	echo "</tr>";
 	echo"</div>";
 	}
