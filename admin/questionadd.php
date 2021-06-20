@@ -10,14 +10,14 @@ error_reporting(1);
 extract($_POST);
 
 echo "<BR>";
-if (!isset($_SESSION[alogin]))
+if (!isset($_SESSION['alogin']))
 {
 	echo "<br><h2><div  class=head1>You are not Logged On Please Login to Access this Page</div></h2>";
 	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
 	exit();
 }
 echo "<h2 style='color:#ff6600' class='text-center bg-primary'>ADD Question</h2>";
-if($_POST[submit]=='Save' || strlen($_POST['testid'])>0 )
+if($_POST['submit']=='Save' || strlen($_POST['testid'])>0 )
 {
 extract($_POST);
 mysqli_query($con,"insert into mst_question(test_id,que_desc,ans1,ans2,ans3,ans4,true_ans) values ('$testid','$addque','$ans1','$ans2','$ans3','$ans4','$anstrue')",$cn) or die(mysqli_error());
