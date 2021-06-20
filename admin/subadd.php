@@ -17,7 +17,7 @@ if (!isset($_SESSION['alogin']))
 	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
 	exit();
 }
-echo "<h1 class='text-center bg-primary'>ADD SUBJECT</h1>";
+echo "<h1 class='text-center bg-primary'><font color='orange'>ADD SUBJECT</font></h1>";
 
 echo "<table width=100%>";
 echo "<tr><td align=center></table>";
@@ -47,14 +47,14 @@ return true;
 </script>
 
 <div style="margin:auto;width:90%;height:500px;box-shadow:2px 1px 2px 2px #CCCCCC;text-align:left">
-<title>Add Subject</title>
+<title >Add Subject</title>
 <form name="form1" method="post" onSubmit="return check();">
   <table class="table table-striped">>
     <tr>
-      <td width="45%" height="32"><div align="center"><strong>Enter Subject Name </strong></div></td>
+      <td style='color:white' width="45%" height="32"><div align="center"><strong>Enter Subject Name </strong></div></td>
       <td width="2%" height="5">  
       <td width="53%" height="32">
-        <input class="form-control" name="subname" placeholder="enter language name" type="text" id="subname">
+        <input class="form-control" name="subname" placeholder="Enter subject name" type="text" id="subname">
     <tr>
         <td height="26"> </td>
         <td>&nbsp;</td>

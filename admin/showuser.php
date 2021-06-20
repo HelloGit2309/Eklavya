@@ -18,7 +18,7 @@ include("../database.php");
 
 		$sql=mysqli_query($con,"Select * From mst_user");	
 		echo "<table class='table table-striped'>";
-		echo"<h1 class='text-center bg-danger'>Registered User Detail</h1>";
+		echo"<h1 style='color:white' class='text-center bg-danger'>Registered User Detail</h1>";
 		echo "<tr>
 		<th style='color:#6699ff' class='text-primary'>UserID</th>
 				<th style='color:#6699ff' class='text-primary'>Name</th>
