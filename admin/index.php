@@ -30,11 +30,11 @@ include("header.php");
     <td width="238"><table width="219" border="0" align="center">
   <tr>
     <td width="163" class="style2">Login ID </td>
-    <td width="200"><input class="form-control" name="loginid" type="text" id="loginid"></td>
+    <td width="400" ><input class="" name="loginid" type="text" id="loginid" size="30"></td>
   </tr>
   <tr>
     <td class="style2">Password</td>
-    <td><input class="form-control" name="pass" type="password" id="pass"></td>
+    <td><input class="" name="pass" type="password" id="pass" size="30"></td>
   </tr>
   <tr>
     <td class="style2">&nbsp;</td>

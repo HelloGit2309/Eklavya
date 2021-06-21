@@ -39,8 +39,8 @@ $id=$result['test_id'];
 	echo "<td>".$result['test_id']. "</td>";
 	echo "<td>".$result['test_name']."</td>";
 	echo "<td>".$result['total_que']."</td>";
-	echo "<td><a href='testupdate.php?test_id=$id'><span class='glyphicon glyphicon-edit'></span></a></td>";
-	echo "<td><a href='testdelete.php?test_id=$id'><span class='glyphicon glyphicon-trash'></span></a></td>";
+	echo "<td><a href='testupdate.php?test_id=$id'><span style='color:yellow' class='glyphicon glyphicon-edit'>Update</span></a></td>";
+	echo "<td><a href='testdelete.php?test_id=$id'><span style='color:yellow' class='glyphicon glyphicon-trash'>Delete</span></a></td>";
 	echo "</tr>";
 	}
 	echo "</table>";

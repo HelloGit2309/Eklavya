@@ -1,5 +1,5 @@
 body {
-	background-color: red;
+	/* background-color: red; */
 	background: url(background.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
@@ -27,6 +27,7 @@ body {
 	border-radius: .25rem;
 	border: 1px solid #ced4da;
 	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	size: 50px;
 }
 
 .block-container{
@@ -46,9 +47,7 @@ body {
 }
 
 
-.form-control{
-	width:50%
-}
+
 
 .home-heading{
 	margin-top: -20px;
