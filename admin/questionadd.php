@@ -16,7 +16,7 @@ if (!isset($_SESSION['alogin']))
 	echo "<a href=index.php><h3 align=center>Click Here for Login</h3></a>";
 	exit();
 }
-echo "<h2 style='color:#ff6600' class='text-center bg-primary'>ADD Question</h2>";
+echo "<h2 style='color:white' class='text-center bg-primary'><font color='orange'>ADD Question</font></h2>";
 if($_POST['submit']=='Save' || strlen($_POST['testid'])>0 )
 {
 extract($_POST);
@@ -71,7 +71,7 @@ return true;
 <form name="form1" method="post" onSubmit="return check();">
   <table class="table table-striped">
     <tr>
-      <td width="24%" height="32"><div align="left"><strong>Select Test Name </strong></div></td>
+      <td style="color:white" width="24%" height="32"><div align="left"><strong>Select Test Name </strong></div></td>
       <td width="1%" height="5">  
       <td width="75%" height="32"><select class="form-control" name="testid" id="testid">
 <?php
@@ -91,32 +91,32 @@ echo "<option value='$row[0]'>$row[2]</option>";
       </select>
         
     <tr>
-        <td height="26"><div align="left"><strong> Enter Question </strong></div></td>
+        <td style="color:white"height="26"><div align="left"><strong> Enter Question </strong></div></td>
         <td>&nbsp;</td>
 	    <td><textarea class="form-control" name="addque" cols="60" rows="2" id="addque"></textarea></td>
     </tr>
     <tr>
-      <td height="26"><div align="left"><strong>Enter Answer1 </strong></div></td>
+      <td style="color:white" height="26"><div align="left"><strong>Enter Answer1 </strong></div></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="ans1" type="text" id="ans1" size="85" maxlength="85"></td>
     </tr>
     <tr>
-      <td height="26"><strong>Enter Answer2 </strong></td>
+      <td style="color:white" height="26"><strong>Enter Answer2 </strong></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="ans2" type="text" id="ans2" size="85" maxlength="85"></td>
     </tr>
     <tr>
-      <td height="26"><strong>Enter Answer3 </strong></td>
+      <td style="color:white"height="26"><strong>Enter Answer3 </strong></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="ans3" type="text" id="ans3" size="85" maxlength="85"></td>
     </tr>
     <tr>
-      <td height="26"><strong>Enter Answer4</strong></td>
+      <td style="color:white" height="26"><strong>Enter Answer4</strong></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="ans4" type="text" id="ans4" size="85" maxlength="85"></td>
     </tr>
     <tr>
-      <td height="26"><strong>Enter True Answer </strong></td>
+      <td style="color:white" height="26"><strong>Enter True Answer </strong></td>
       <td>&nbsp;</td>
       <td><input class="form-control" name="anstrue" type="text" id="anstrue" size="50" maxlength="50"></td>
     </tr>

@@ -25,6 +25,7 @@ include("../database.php");
 $sql=mysqli_query($con,"select * from mst_test");
 
 	echo "<table class='table table-striped'>";
+
 	echo"<tr><th><a class='btn btn-danger' href=\"testadd.php\"> ADD Test</a>&emsp;&emsp;</th></tr>";
 	echo "<tr><th class='text-primary'>ID</th><th class='text-primary'>name</th>
 	<th class='text-primary'>Total question</th>
@@ -39,8 +40,31 @@ $id=$result['test_id'];
 	echo "<td>".$result['test_id']. "</td>";
 	echo "<td>".$result['test_name']."</td>";
 	echo "<td>".$result['total_que']."</td>";
+<<<<<<< HEAD
 	echo "<td><a href='testupdate.php?test_id=$id'><span style='color:yellow' class='glyphicon glyphicon-edit'>Update</span></a></td>";
 	echo "<td><a href='testdelete.php?test_id=$id'><span style='color:yellow' class='glyphicon glyphicon-trash'>Delete</span></a></td>";
+=======
+	echo "<td><a href='testupdate.php?test_id=$id'><span class='glyphicon glyphicon-edit'></span></a></td>";
+	echo "<td><a href='testdelete.php?test_id=$id'><span class='glyphicon glyphicon-trash'></span></a></td>";
+
+	echo"<tr><th><a style='color:orange' class='btn btn-danger' href=\"testadd.php\"> ADD Test</a>&emsp;&emsp;</th></tr>";
+	echo "<tr><th style='color:#6699ff' class='text-primary'>ID</th><th style='color:#6699ff' class='text-primary'>Name</th>
+	<th style='color:#6699ff' class='text-primary'>Total question</th>
+	<th style='color:#6699ff' class='text-primary'>Update</th>
+	<th style='color:#6699ff' class='text-primary'>Delete</th></tR>";
+	
+	while($result=mysqli_fetch_assoc($sql))
+	{
+$id=$result['test_id'];
+	
+	echo "<tr>";	
+	echo "<td style='color:white'>".$result['test_id']. "</td>";
+	echo "<td style='color:white'>".$result['test_name']."</td>";
+	echo "<td style='color:white'>".$result['total_que']."</td>";
+	echo "<td><a style='color:#ff6600' href='testupdate.php?test_id=$id'><span class='glyphicon glyphicon-edit'>Update</span></a></td>";
+	echo "<td><a style='color:#ff6600' href='testdelete.php?test_id=$id'><span class='glyphicon glyphicon-trash'>Delete</span></a></td>";
+
+>>>>>>> fc26a853142e0feb1c5aff4c15c54ae7c8e36e06
 	echo "</tr>";
 	}
 	echo "</table>";
