@@ -1,4 +1,5 @@
 body {
+	background: url(background.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
 	background-repeat: no-repeat;
@@ -8,7 +9,10 @@ body {
 h1{
 
 	font-style: 'Roboto', sans-serif;
+
 }
+
+
 .myTable{
 	align: center;
 	text-align: center;
@@ -20,16 +24,57 @@ h1{
 
 
 }
+
+
+.questions-table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	color: #EDEDED;
+}
+
+.next-question{
+	margin-top: 20px;
+	margin-left: 100px;
+}
 .style1 {
 	color: #FFFFFF;
 	font-weight: bold;
 }
-.style2 {
-	color: #990000;
+.question{
+	color: #171717;
 	font-weight: bold;
-	font-size: 20px;
-	padding: 10px;
+	font-size: 25px;
+	padding-bottom: 10px;
+	margin-right: 10px;
 }
+
+.style8 {
+	color: #EDEDED;
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.result{
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #FFFFFF;
+}
+
+.Result-heading{
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 90px;
+}
+
+
+
+
+
 .style4 {
 	color: #000000;
 	font-weight: bold;
@@ -40,12 +85,7 @@ h1{
 	color: #993300;
 	font-weight: bold;
 }
-.style8 {
-	color: #6633CC;
-	font-weight: bold;
-	font-size: 18px;
-	padding:5px;
-}
+
 a:link {
 	color: #330066;
 	text-decoration: none;
@@ -86,13 +126,14 @@ a:visited {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+	padding-left: 100px;
 	color:#00CC66 ;
 }
 .fans {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
-	color:#FF0000 ;
+	color:#DA0037 ;
 }
 .next-review{
 	padding: 5px 15px;

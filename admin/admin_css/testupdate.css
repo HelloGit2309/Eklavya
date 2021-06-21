@@ -49,3 +49,16 @@ body {
 .form-control{
 	width:50%
 }
+
+.home-heading{
+	margin-top: -20px;
+	color: #AAAAAA;
+	text-align: right;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+
+td{
+	color: #FFF;
+}

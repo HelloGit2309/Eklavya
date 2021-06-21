@@ -1,3 +1,31 @@
+body {
+	background: url(background.jpg);
+	margin-left: 0px;
+	margin-top: 0px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+td{
+	padding-bottom: 30px;
+}
+
+
+.result{
+	border:0;
+	/* padding-bottom: 100px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home-heading{
+	margin-top: -20px;
+	color: #AAAAAA;
+	text-align: right;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
 .style2 {
 	color: white;
 	font-weight: bold;
@@ -18,11 +46,4 @@
 	color:white;
 	text-align: center;
 	font-weight: bold;
-}
-body {
-	background: url(background.jpg);
-	margin-left: 0px;
-	margin-top: 0px;
-	background-repeat: no-repeat;
-  background-size: cover;
 }

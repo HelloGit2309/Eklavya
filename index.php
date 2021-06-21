@@ -11,8 +11,6 @@ session_start();
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootsrap Scripts -->
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
@@ -138,18 +136,26 @@ if (isset($_SESSION['login']))
 	onClick=\"javascript: return confirm('Do you want to delete account ?');\" >Delete Account</a></strong>
 	</div>";
 
+	include('footer.php');
 	echo "<style>
+
+	body{
+		background:url(background.jpg);
+		// margin-left: 0px;
+		// margin-top: 0px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
  	h1{
  		color:#FFFFFF;
  	}
- 	body{
- 		background:url(background.jpg);
- 		// margin-left: 0px;
- 		// margin-top: 0px;
- 		background-repeat: no-repeat;
- 	  background-size: cover;
- 	}
+
+	.tab-items{
+		font-size:25px;
+	}
+
+
 
 	btn{
 		margin-top: 10px;
@@ -161,6 +167,10 @@ if (isset($_SESSION['login']))
 		text-decoration:none;
 		font-size: 30px;
 		align: center;
+	}
+
+	.footer{
+		background-color:transparent;
 	}
 
  	</style>";
