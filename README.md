@@ -10,6 +10,6 @@ Password: admin
 
 #### Developers:
 
-1.> [Akash Kumar](https://github.com/HelloGit2309)
-2.> [Ashish Kanoujia](https://github.com/Halfsoul24)
+1.> [Akash Kumar](https://github.com/HelloGit2309)  
+2.> [Ashish Kanoujia](https://github.com/Halfsoul24)  
 3.>[Saksham Rohilla](https://github.com/naruto361)
