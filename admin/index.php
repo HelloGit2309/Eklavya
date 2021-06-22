@@ -18,10 +18,10 @@ include("header.php");
 ?>
 <div >
 
-  <a href="../index.php" style="text-decoration:none;" ><h3 class="home-heading">Home </h3></a>
+  <a href="../index.php" style="text-decoration:none;" ><h3 style="color:green" class="home-heading">Home </h3></a>
 
 </div>
-<h1 >Adminstrative Login</h1>
+<h1 style="color:orange">   Administrative Login</h1>
 <form name="form1" method="post" action="login.php">
 <table class="">
   <tr>
