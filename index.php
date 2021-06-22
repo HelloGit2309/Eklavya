@@ -66,7 +66,7 @@ session_start();
 			</div>
 	</nav>
 
-
+<!-- 	Slides -->
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -88,8 +88,9 @@ session_start();
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- 		slides end -->
 <?php
-
+		
 
 include("database.php");
 include('header.php');
